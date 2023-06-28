@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+
+.container{min-height: 100vh; display: flex; align-items: center;justify-content: center;  background:linear-gradient(45deg,rgb(213, 89, 89),rgb(95, 187, 95),rgb(241, 241, 35));}
+.row{background: #fff; width: 280px;height: 450px;border-radius: 10px;box-shadow: 0 5px 10px rgba(0,0,0,0.5); padding: 10px;}
+#input{height: 50px; width: 100%; text-transform: capitalize; border: none; outline: none;border-radius: 5px; background: linear-gradient(60deg,rgb(126, 76, 76), rgba(52, 185, 192, 0.325),yellow); color: black;padding: 0px 10px;margin: 15px 0px;}
+
+#input::placeholder{
+    color:black;
+}
+
+ul li{
+    background: #aaada5;
+    color: rgb(18, 18, 21);
+    height: 40px;
+    border-radius: 10px;
+    list-style: none;
+    margin: 10px 0px;
+    padding: 10px;
+    position: relative;
+}
+
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check{
+    right: 40px;
+    color: black;
+}
+
+ul .fa-trash{
+    right: 15px;
+    color: red;
+}
+
+.ul .checked{
+    background: pink;
+    text-decoration: line-through;
+    transition:  .2s;
+}
